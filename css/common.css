@@ -1,0 +1,45 @@
+/* подключаем шрифты */
+
+@font-face {
+	src: url(fonts/EuropeExt Bold.ttf);
+	font-style: 'EuropeExt Bold';
+}
+
+/* отменяем отступы */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* отменяем отсупы для навигации */
+.list-nav {
+	margin: 0;
+	padding: 0;
+}
+
+/* отменяем маркеры и стили ссылок */
+ul {
+	list-style: none;
+	text-transform: uppercase;
+}
+
+/* устанвливаем ширину для меню и блоков, выставляем по центру */
+
+.width-nav,
+.center {
+	width: 980px;
+	margin: 0 auto;
+}
+
+/* устанавливаем отступ до следующего блока */
+.head {
+	margin-bottom: 39px;
+}
+
+/* оформления первого блока */
+/* установка заднего фона */
+.first-block {
+	background: url(img/bg-first-block.png) no-repeat;
+}
+

@@ -1,0 +1,27 @@
+/* задаём размер для навигационного меню и задний фон */
+
+.head {
+	height: 78px;
+	background: #01983b;
+}
+
+/* меняем вид меню на горизонтальное */
+
+.list-nav {
+	display: flex;
+	justify-content: space-between;
+	height: 78px; /* выставляем высоту меню */
+	line-height: 78px; /* выравниваем меню по центру */
+}
+
+.list {
+	height: 30px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #fff;
+}
+
+.list:hover {
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+}
