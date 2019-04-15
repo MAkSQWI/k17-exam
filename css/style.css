@@ -3,6 +3,7 @@
 .head {
 	height: 78px;
 	background: #01983b;
+	background-image: url(/css/img/pattern.png);
 }
 
 /* меняем вид меню на горизонтальное */
@@ -25,3 +26,73 @@
 	border-top: 3px solid #fff;
 	border-bottom: 3px solid #fff;
 }
+
+/* добавляем оформление в блоке с контактами */
+
+.social {
+    display: flex;
+    align-items: flex-end;
+	font-weight: 900;
+    text-transform: uppercase;
+	color: #01983b;
+    margin: 0 8px 0;
+}
+
+.contacts {
+	display: flex;
+    flex-flow: wrap row;
+    width: 345px;
+    justify-content: space-between;
+}
+
+.fildsearch {
+	display: flex;
+	flex-direction: row;
+}
+
+/* оформление поля поиска */
+
+input[type="search"] {
+	width: 382px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    margin: 0 4px 0 0;
+}
+
+/* стилизация поиска */
+
+button[type="submit"] {
+	border: none;
+	background: none;
+	padding: 0;
+}
+
+/* задаём размер изображений для слайдера */
+
+.slide-img {
+	position: relative;
+	width: 980px;
+	height: 492px;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	/* object-fit: cover; */
+}
+
+.slide-txt {
+	position: absolute;
+	top: 345px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+/* блок с тенью */
+.shadow {
+	position: absolute;
+	z-index: 1;
+	top: 65px;
+    left: -194px;
+}
+
+/* создаём свои точки для сладйера */
+
