@@ -80,19 +80,70 @@ button[type="submit"] {
 	/* object-fit: cover; */
 }
 
-.slide-txt {
+.slide-txt,
+.slide-txt ~ h3,
+.slide-txt ~ p {
 	position: absolute;
 	top: 345px;
 	background: rgba(0, 0, 0, 0.5);
+	z-index: 5;
+	font-family: 'EuropeExt', Arial;
+	font-size: 30px;
+	color: #fff;
 }
 
 /* блок с тенью */
 .shadow {
 	position: absolute;
 	z-index: 1;
-	top: 65px;
+	top: 10px;
     left: -194px;
 }
 
 /* создаём свои точки для сладйера */
 
+/* стили для второго блока */
+
+.second-logo {
+	display: flex;
+	justify-content: center;
+}
+
+.logo {
+	height: 34px;
+	margin: 7px;
+}
+
+.txt-nova,
+.txt-board {
+	font-family: Regular, 'EuropeExt Bold';
+	font-size: 42px;
+	color: #01983b;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.txt-board {
+	color: #2c2783;
+}
+
+.header-frame {
+	display: flex;
+	justify-content: center;
+}
+
+.txt-blockframe {
+	font-family: Regular, 'EuropeExt Blod';
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #073d79;
+}
+
+.penosterol {
+	margin-left: -147px;
+    margin-top: 53px;
+}
+
+.youtube {
+	background: url(/css/img/shadow.png) no-repeat;
+}

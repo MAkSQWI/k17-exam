@@ -1,8 +1,8 @@
 /* подключаем шрифты */
 
 @font-face {
-	src: url('fonts/EuropeExt Bold.ttf');
-	font-family: 'EuropeExt Bold';
+	src: url('fonts/EuropeExt Bold.ttf'), url('/css/fonts/EuropeExt.ttf');
+	font-family: Regular, 'EuropeExt Bold';
 }
 
 /* отменяем отступы */
@@ -41,6 +41,7 @@ ul {
 /* установка заднего фона */
 .first-block {
 	background: url(img/bg-first-block.png) no-repeat;
+	background-position: -285px -73px;
 }
 
 /* оформление блока с контактами */
@@ -68,15 +69,20 @@ ul {
 /* задаём размер слайдера */
 .slider-block {
 	position: relative;
-	padding-bottom: 100px;
+	padding-bottom: 75px;
 }
 
 .slider {
 	position: relative;
-	overflow: hidden;
 	width: 980px;
 	height: 492px;
 	margin: 0 auto;
 	padding-top: 16px;
 	z-index: 2;
+}
+
+/* оформление второго блока */
+
+.second-block {
+	background: url(/css/img/bgblock2.png) no-repeat;
 }
