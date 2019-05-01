@@ -41,7 +41,7 @@ ul {
 /* установка заднего фона */
 .first-block {
 	background: url(img/bg-first-block.png) no-repeat;
-	background-position: -285px -73px;
+	background-position-y: bottom;
 }
 
 /* оформление блока с контактами */
