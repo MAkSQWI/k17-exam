@@ -1,7 +1,7 @@
 /* подключаем шрифты */
 
 @font-face {
-	src: url('fonts/EuropeExt Bold.ttf'), url('/css/fonts/EuropeExt.ttf');
+	src: url('/css/fonts/EuropeExt\ Bold.ttf'), url('/css/fonts/EuropeExt\ Normal.ttf'), url(/css/fonts/Vani\ Bold.ttf);
 	font-family: Regular, 'EuropeExt Bold';
 }
 
@@ -85,4 +85,69 @@ ul {
 
 .second-block {
 	background: url(/css/img/bgblock2.png) no-repeat;
+}
+
+.youtube {
+	position: relative;
+}
+
+/* оформление третьего блока */
+
+.third-block {
+	background: url(/css/img/bg-third1.png), url(/css/img/bg-third.png) no-repeat;
+}
+
+/* задаем новый центр */
+.new-center {
+	width: 1225px;
+	margin: 0 auto;
+}
+
+/* устанавливаем прозрачный задний фон для 4-го блока */
+
+.four-block {
+	background: url(/css/img/fourback-left.png), url(/css/img/fourback-right.png);
+	background-repeat: no-repeat;
+	background-size: auto 381px;
+	background-position: 0 205px, right 205px;
+	z-index: -1;
+}
+
+.four-block,
+.background{
+	position: relative;
+}
+
+.square-shadow {
+	position: absolute;
+	background: #fff;
+	border: 3px solid #e7ebf3;
+	opacity: 0.3;
+	height: 759px;
+    width: 1255px;
+	z-index: -1;
+}
+
+/* фон для 5-го блока */
+
+.five-block {
+	background: url(/css/img/back-five.png), url(/css/img/back-five-dot.png);
+	background-repeat: no-repeat;
+	background-position: 0;
+}
+
+.tasks {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.container-left {
+	width: 486px;
+	height: auto;
+}
+
+.container-right {
+	width: 723px;
+	height: auto;
 }
