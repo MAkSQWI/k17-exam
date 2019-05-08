@@ -54,6 +54,31 @@ a[href="https://instagram.com"]{
 	font-weight: 700;
 }
 
+/* повдение при наведении на иконки соц сетей */
+
+@keyframes bounce {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	20% {
+		transform: translateY(-3px);
+	}
+	40% {
+		transform: translateY(-9px);
+	}
+	60% {
+		transform: translateY(-12px);
+	}
+	80% {
+		transform: translateY(-6px);
+	}
+}
+
+.inst:hover,
+.vk:hover {
+	animation: bounce .5s;
+}
+
 .phone,
 .mail {
 	text-decoration: none;
@@ -87,25 +112,103 @@ button[type="submit"] {
 .slide-img {
 	position: relative;
 	width: 980px;
-	height: 492px;
+	top: -160px;
+	left: 0;
+}
+
+.slide-pic {
+	position: relative;
+	width: 980px;
+	height: 493px;
 	top: 0;
 	left: 0;
-	z-index: 2;
+	overflow: hidden;
 }
 
-.slide-txt,
-.slide-txt ~ h3,
-.slide-txt ~ p {
+.slide-txt {
 	position: absolute;
-	top: 345px;
+	bottom: 35px;
 	background: rgba(0, 0, 0, 0.5);
-	z-index: 5;
-	font-family: Regular, 'EuropeExt', sans-serif;
-	font-size: 30px;
-	color: #fff;
+	width: 770px;
 }
+
+.slide-txt > p {
+	font-family: 'EuropeExt', Normal;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0;
+}
+
+.slide-txt > p:first-child {
+	margin: 40px 23px 0;
+}
+
+.slide-txt > p:nth-child(2) {
+	margin: 0 23px;
+}
+
+.slide-txt > p:last-child {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 22px 23px 12px;
+}
+
+/* Начало --> создаем свои точки для слайдера */
+
+.slick-dots {
+	position: absolute;
+	bottom: -25px;
+	display: block;
+	width: 100%;
+	padding: 0;
+	list-style: none;
+	text-align: left;
+}
+
+.slick-dots li {
+	position: relative;
+	display: inline-block;
+	width: 32px;
+	height: 12px;
+	background: #fff;
+	bottom: 21px;
+	left: 20px;
+}
+
+.slick-prev:before {
+	content: url(/css/img/arrow-circle-left-solid.svg);
+}
+
+.slick-next:before {
+	content: url(/css/img/arrow-circle-right-solid.svg);
+}
+
+.slick-dots li button {
+	width: 32px;
+	height: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+	background: #559744;
+}
+
+.slick-dots li.slick-active button:before {
+	opacity: 1;
+	color: #559744;
+}
+
+.slick-dots li button::before {
+	width: 32px;
+	height: 12px;
+	content: '';
+	background: #fff;
+}
+
+/* Конец --> создания точек для слайдера*/
 
 /* блок с тенью */
+
 .shadow {
 	position: absolute;
 	z-index: 1;
@@ -198,6 +301,14 @@ button[type="submit"] {
 	border: none;
 	border-radius: 3px;
 	box-shadow: 0px 6px 10px 2px #ccc;
+}
+
+.know-button:hover {
+	background: #81ba72;
+}
+
+.know-button:active {
+	background: #2e6121;
 }
 
 .link {
@@ -597,7 +708,6 @@ button[type="submit"] {
 
 .left-tasks {
 	display: flex;
-	align-self: flex-end;
 	background: #da0000;
 	width: 364px;
 	margin-bottom: 5px;
@@ -620,7 +730,6 @@ button[type="submit"] {
 
 .right-tasks {
 	display: flex;
-	align-self: flex-end;
 	background: #559744;
 	width: 600px;
 	margin-bottom: 5px;
@@ -628,10 +737,185 @@ button[type="submit"] {
 	color: #fff;
 }
 
-.left-tasks::before {
+/* тени от блоков с текстами задач через псевдоэлементы */
+
+.left-tasks::before,
+.left-tasks::after {
 	content: '';
-	width: 60px;
-	position: absolute;
+	display: flex;
 	background: #da0000;
+	width: 68px;
+	height: calc(100% - 5px);
+	top: 0;
+	left: 69px;
+	position: absolute;
 	opacity: .5;
+}
+
+.left-tasks::after {
+	left: 1px;
+	opacity: .2;
+}
+
+.right-tasks::before,
+.right-tasks::after {
+	content: '';
+	display: flex;
+	background: #559744;
+	width: 73px;
+	height: calc(100% - 5px);
+	top: 0;
+	right: 73px;
+	position: absolute;
+	opacity: .5;
+}
+
+.right-tasks::after {
+	right: 0;
+	opacity: .2;
+}
+
+/* задний фон для задач */
+
+.tasks-background1 {
+	position: absolute;
+	top: -91px;
+	left: -12px;
+	z-index: -1;
+}
+
+.tasks-background2 {
+	position: absolute;
+	top: -75px;
+	right: -150px;
+	z-index: -1;
+}
+
+/* шестой блок сертификатов */
+
+.logo-six {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+
+.sertificate-header {
+	font-family: 'EuropeExt', Bold;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #2f2b80;
+	margin: 18px 0 0;
+}
+
+.certificates-img {
+	padding: 30px 0;
+}
+
+.sert-foot-txt {
+	font-family: 'EuropeExt', Bold;
+	font-size: 24px;
+	color: #2f2b80;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.sert-foot-txt ~ img {
+	height: 96px;
+}
+
+/* нижний блок с контактами */
+
+.contact {
+	position: relative;
+	padding: 0 0 300px;
+}
+
+.container-contact {
+	background: url(/css/img/pattern.png), #01983b;
+	border-radius: 0 0 32px 32px;
+	text-align: center;
+	position: relative;
+	padding: 0 0 30px;
+	box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.contact-txt {
+	font-family: 'EuropeExt', Bold;
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	padding-top: 36px;
+}
+
+.contact-header,
+.contact-adress,
+.contact-phone {
+	font-family: 'Arial', Regular;
+	font-size: 18px;
+	color: #fff;
+	margin: 3px;
+}
+
+.contact-header {
+	text-transform: uppercase;
+}
+
+.contact-phone {
+	font-size: 14px;
+	margin: 14px;
+}
+
+#mail {
+	color: #fff;
+}
+
+.google {
+	position: absolute;
+	width: 100%;
+	bottom: -4px;
+	z-index: -1;
+}
+
+.footer-logo {
+	padding: 36px 0 20px;
+}
+
+.footer-logo > p {
+	color: #fff;
+	margin: 0;
+	font-size: 12px;
+	font-family: 'EuropeExt';
+}
+
+a[href="https://wezom.com.ua/"] {
+	text-decoration: none;
+}
+
+a[href="https://wezom.com.ua/"] > p {
+	text-transform: uppercase;
+	margin: 85px 0 0;
+	color: #fff;
+}
+
+.footer-inst,
+.footer-vk {
+	margin: 7px 0;
+}
+
+/* анимация социиальных сетей в footer */
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.footer-inst:hover,
+.footer-vk:hover {
+	animation: spin 600ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }

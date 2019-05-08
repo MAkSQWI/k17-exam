@@ -75,7 +75,7 @@ ul {
 .slider {
 	position: relative;
 	width: 980px;
-	height: 492px;
+	height: 493px;
 	margin: 0 auto;
 	padding-top: 16px;
 	z-index: 2;
@@ -94,7 +94,9 @@ ul {
 /* оформление третьего блока */
 
 .third-block {
-	background: url(/css/img/bg-third1.png), url(/css/img/bg-third.png) no-repeat;
+	background: url(/css/img/bg-third1.png) no-repeat, url(/css/img/bg-third.png) no-repeat;
+	background-position: left bottom, 1025px -85px;
+	background-size: 50%, 57%;
 }
 
 /* задаем новый центр */
@@ -131,15 +133,19 @@ ul {
 /* фон для 5-го блока */
 
 .five-block {
-	background: url(/css/img/back-five.png), url(/css/img/back-five-dot.png);
+	background: url(/css/img/back-five.png);
 	background-repeat: no-repeat;
-	background-position: 0;
+	background-position: 0 -17px;
+	padding-bottom: 52px;
 }
 
 .tasks {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	width: 1255px;
+	position: relative;
+	z-index: 1;
 }
 
 .container-left {
@@ -150,4 +156,18 @@ ul {
 .container-right {
 	width: 723px;
 	height: auto;
+}
+
+/* шестой блок с сертфикатами */
+
+.certificates {
+	text-align: center;
+}
+
+footer {
+	background: url(/css/img/ft-background.png);
+	background-size: 100%;
+	text-align: center;
+	position: relative;
+	top: 0;
 }
