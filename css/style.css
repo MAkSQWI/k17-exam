@@ -16,11 +16,11 @@
 }
 
 .list {
-	font-family: Regular, 'EuropeExt', sans-serif; 
-	font-size: 16px;
+	font-family: Arial, sans-serif;
 	height: 30px;
 	text-decoration: none;
 	color: #fff;
+	padding: 7px 0;
 }
 
 .list:hover {
@@ -36,7 +36,7 @@
     text-transform: uppercase;
 	color: #01983b;
 	margin: 0 8px 0;
-	font-family: Regular, 'EuropeExt Bold', sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: 12px;
 }
 
@@ -47,11 +47,10 @@ a[href="https://instagram.com"]{
 .contacts {
 	display: flex;
     flex-flow: wrap row;
-    width: 345px;
+    width: 415px;
 	align-content: stretch;
-	font-family: Bold, 'Arial';
-	font-size: 14px;
-	font-weight: 700;
+	font-family: Arial;
+	font-weight: bold;
 }
 
 /* повдение при наведении на иконки соц сетей */
@@ -82,6 +81,11 @@ a[href="https://instagram.com"]{
 .phone,
 .mail {
 	text-decoration: none;
+}
+
+.phone:hover,
+.mail:hover {
+	text-decoration: underline;
 }
 
 .fildsearch {
@@ -216,81 +220,51 @@ button[type="submit"] {
     left: -194px;
 }
 
-/* создаём свои точки для сладйера */
-
 /* стили для второго блока */
 
 .second-logo {
-	display: flex;
-	justify-content: center;
+	text-align: center;
+	padding: 69px 0 25px;
 }
 
 .logo2 {
-	height: 34px;
-	margin: 77px 7px 7px;
-}
-
-.txt-nova,
-.txt-board {
-	font-family: Regular, 'EuropeExt', sans-serif;
-	font-size: 42px;
-	color: #01983b;
-	text-transform: uppercase;
-	margin: 70px 0 0;
-}
-
-.txt-board {
-	color: #2c2783;
-}
-
-.header-frame {
-	display: flex;
-	justify-content: center;
+	height: 30px;
+	padding-bottom: 16px;
 }
 
 .txt-blockframe {
-	font-family: Regular, 'EuropeExt', sans-serif;
+	font-family: 'EuropeExt', sans-serif;
 	font-size: 30px;
+	font-weight: bold;
 	text-transform: uppercase;
 	color: #073d79;
+	padding-bottom: 13px;
+	margin: 0;
 }
 
-.penosterol {
-	margin-left: -389px;
-    margin-top: -17px;
+.win-youtube {
+	position: relative;
+	z-index: 2;
 }
 
-.youtube-frame,
 .youtube-shadow {
 	position: absolute;
-}
-
-.youtube-frame {
-	top: -415px;
-	margin-left: 200px;
-}
-
-.youtube-shadow {
-	z-index: -1;
-	top: -120px;
-	margin-left: 84px;
+	bottom: -78px;
+	left: 86px;
+	z-index: 1;
 }
 
 /* стилизация контета под youtube и button*/
 
 .info-block {
-	margin: -50px 0 45px;
+	margin: 50px 0 45px;
 }
 
 .info-text{
-	font-family: Regular, 'Arial';
+	font-family: Arial, sans-serif;
 	font-size: 14px;
 	text-align: center;
-}
-
-.button {
-	display: flex;
-	justify-content: center;
+	margin: 0 0 22px;
 }
 
 .know-button {
@@ -325,7 +299,7 @@ button[type="submit"] {
 .third-head {
 	display: flex;
 	justify-content: center;
-	margin-top: 50px;
+	margin-top: 17px;
 }
 
 .head-txt {
@@ -347,11 +321,11 @@ button[type="submit"] {
 .leftwin,
 .rightwin {
 	width: 611px;
-	height: 311px;
+	height: 306px;
 	background: #000;
 	overflow: hidden;
 	position: relative;
-	font-family: Regular, 'EuropeExt', sans-serif;
+	font-family: Arial, sans-serif;
 	text-transform: uppercase;
 }
 
@@ -373,7 +347,12 @@ button[type="submit"] {
 .leftwin-txt {
 	position: absolute;
 	color: #fff;
-	right: 40px;
+	right: 50px;
+	font-size: 24px;
+}
+
+.leftwin-txt > p {
+	margin: 17px 0 0;
 }
 
 .left-body-one {
@@ -383,15 +362,38 @@ button[type="submit"] {
 	right: 0;
 }
 
-.body-txt-one {
-	height: 18px;
+
+.left-body-one:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -47px;
+	width: 47px;
+	height: 100%;
+	background: #01983b;
+	opacity: .5;
+}
+
+.left-body-one:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -94px;
+	width: 47px;
+	height: 100%;
+	background: #01983b;
+	opacity: .2;
+}
+
+.body-txt-one,
+.body-txt-two,
+.body-txt-third {
 	font-size: 14px;
 	background: #01983b;
-	width: 150px;
 	text-align: end;
-	line-height: 18px;
 	margin: 0;
-	padding-right: 40px;
+	padding: 0 50px 0 43px;
+	line-height: 18px;
 }
 
 .left-body-two {
@@ -401,16 +403,26 @@ button[type="submit"] {
 	right: 0;
 }
 
-.body-txt-two {
-	height: 18px;
-	font-size: 14px;
+.left-body-two:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -47px;
+	width: 47px;
+	height: 100%;
 	background: #01983b;
-	width: 171px;
-	text-align: end;
-	line-height: 18px;
-	margin: 0;
-	padding-right: 40px;
-	padding-left: 30px;
+	opacity: .5;
+}
+
+.left-body-two:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -94px;
+	width: 47px;
+	height: 100%;
+	background: #01983b;
+	opacity: .2;
 }
 
 .left-body-third {
@@ -420,21 +432,33 @@ button[type="submit"] {
 	right: 0;
 }
 
-.body-txt-third {
-	height: 18px;
-	font-size: 14px;
+.left-body-third:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -47px;
+	width: 47px;
+	height: 100%;
 	background: #01983b;
-	width: 408px;
-	text-align: end;
-	line-height: 18px;
-	margin: 0;
-	padding-right: 40px;
+	opacity: .5;
+}
+
+.left-body-third:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -94px;
+	width: 47px;
+	height: 100%;
+	background: #01983b;
+	opacity: .2;
 }
 
 .white-logo {
 	position: absolute;
-	bottom: 0;
-	right: 40px;
+	bottom: 1px;
+	right: 50px;
+	height: 16px;
 }
 
 .white-shadow {
@@ -442,7 +466,7 @@ button[type="submit"] {
 	bottom: 0;
 	right: 0;
 	width: 611px;
-	height: 18px;
+	height: 23px;
 	background: #fff;
 	opacity: .2;
 }
@@ -457,7 +481,12 @@ button[type="submit"] {
 .rightwin-txt {
 	position: absolute;
 	color: #fff;
-	left: 40px;
+	left: 50px;
+	font-size: 24px;
+}
+
+.rightwin-txt > p {
+	margin: 17px 0 0;
 }
 
 .right-body-one {
@@ -467,15 +496,41 @@ button[type="submit"] {
 	left: 0;
 }
 
-.right-txt-one {
-	height: 18;
+.right-body-one:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -47px;
+	width: 47px;
+	height: 100%;
+	background: #01983b;
+	opacity: .5;
+}
+
+.right-body-one:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -94px;
+	width: 47px;
+	height: 100%;
+	background: #01983b;
+	opacity: .2;
+}
+
+.right-txt-one,
+.right-txt-two,
+.right-txt-third {
 	font-size: 14px;
 	background: #01983b;
-	width: 433px;
 	text-align: start;
 	line-height: 18px;
 	margin: 0;
-	padding-left: 40px;
+	padding: 0 42px 0 50px;
+}
+
+.right-txt-two {
+	padding-right: 30px;
 }
 
 .right-body-two {
@@ -485,16 +540,26 @@ button[type="submit"] {
     left: 0;
 }
 
-.right-txt-two {
-	height: 18px;
-    font-size: 14px;
-    background: #01983b;
-    width: 171px;
-    text-align: start;
-    line-height: 18px;
-    margin: 0;
-	padding-left: 40px;
-	padding-right: 33px;
+.right-body-two:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -47px;
+	width: 47px;
+	height: 100%;
+	background: #01983b;
+	opacity: .5;
+}
+
+.right-body-two:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -94px;
+	width: 47px;
+	height: 100%;
+	background: #01983b;
+	opacity: .2;
 }
 
 .right-body-third {
@@ -504,21 +569,33 @@ button[type="submit"] {
 	left: 0;
 }
 
-.right-txt-third {
-	height: 18px;
-    font-size: 14px;
-    background: #01983b;
-    width: 233px;
-    text-align: start;
-    line-height: 18px;
-    margin: 0;
-    padding-left: 40px
+.right-body-third:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -47px;
+	width: 47px;
+	height: 100%;
+	background: #01983b;
+	opacity: .5;
+}
+
+.right-body-third:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -94px;
+	width: 47px;
+	height: 100%;
+	background: #01983b;
+	opacity: .2;
 }
 
 .white-logo2 {
 	position: absolute;
-	bottom: 0;
-	left: 40px;
+	bottom: 1px;
+	left: 50px;
+	height: 16px;
 }
 
 .white-shadow2 {
@@ -526,7 +603,7 @@ button[type="submit"] {
 	bottom: 0;
 	right: 0;
 	width: 611px;
-	height: 18px;
+	height: 23px;
 	background: #fff;
 	opacity: .2;
 }
@@ -554,11 +631,11 @@ button[type="submit"] {
 .pres-text {
 	text-align: center;
     margin: 0;
-    font-family: Regular, 'EuropeExt Bold', sans-serif;
+    font-family: Arial, sans-serif;
     text-transform: uppercase;
-    color: green;
+    color: #01983b;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: bold;
     margin-top: 16px;
 }
 
@@ -603,38 +680,47 @@ button[type="submit"] {
 .logotype-four {
 	display: flex;
 	justify-content: center;
+	padding: 55px 0 0;
 }
 
 .logo4 {
-	height: 34px;
-	margin: 62px 7px 0 0;
-}
-
-.txt-nova-two,
-.txt-board-two {
-	font-family: Regular, 'EuropeExt', sans-serif;
-    font-size: 42px;
-    color: #01983b;
-    text-transform: uppercase;
-    margin: 56px 0 0;
-}
-
-.txt-board-two{
-	color: #2c2783;
+	height: 30px;
+	margin: 0 0 11px;
 }
 
 .head-four {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 30px;
+	margin-bottom: 23px;
 }
 
 .head-four-txt {
-	font-family: Regular, 'EuropeExt', sans-serif;
-    font-size: 30px;
+	font-family: 'EuropeExt', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
     text-transform: uppercase;
 	color: #01983b;
 	margin: 0;
+}
+
+.white-square {
+	width: 1225px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.white-square:before {
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 1211px;
+    height: 100%;
+    background: #fff;
+    opacity: .5;
+    border: 3px solid #ccc;
+    z-index: 3;
+    padding-bottom: 53px;
 }
 
 /* стилизация таблицы */
@@ -643,19 +729,20 @@ button[type="submit"] {
 	border: 3px solid #d7deeb;
 	border-collapse: collapse;
 	width: 980px;
-	height: 547px;
 	position: relative;
+	z-index: 10;
 }
 
 .row, .cell {
 	border: 1px solid #d7deeb;
+	padding: 10px 19px 10px 10px;
 }
 
 .row:first-child {
 	background: #01983b;
 	background-image: url(/css/img/pattern.png);
 	color: #fff;
-	font-family: Regular, 'Arial' serif;
+	font-family: Arial, sans-serif;
 	font-size: 14px;
 }
 
@@ -667,19 +754,15 @@ button[type="submit"] {
 	text-align: center;
 }
 
-.cell:first-child {
-	padding: 0 12px;
-}
-
 .row:nth-child(even) {
 	background: #f2f5f7;
 }
 
 .peno-block {
 	position: absolute;
-	bottom: -25px;
-	right: 51px;
-	z-index: -2;
+	bottom: -27px;
+	right: 65px;
+	z-index: 1;
 	transform: scaleX(-1);
 }
 
@@ -689,8 +772,9 @@ button[type="submit"] {
 	margin-top: 100px;
 	text-align: center;
 	text-transform: uppercase;
-	font-family: Bold, 'EuropeExt';
+	font-family: 'EuropeExt', sans-serif;
 	font-size: 30px;
+	font-weight: bold;
 	color: #01983b;
 }
 
@@ -718,13 +802,13 @@ button[type="submit"] {
 .sad-smile,
 .smile {
 	height: 30px;
-	margin: 5px 0 5px 10px;
+	margin: 5px 5px;
 }
 
 .sad-txt,
 .smile-txt {
 	margin-left: 12px;
-	font-family: Arial, 'EuropeExt';
+	font-family: Arial;
 	font-size: 14px;
 }
 
@@ -779,15 +863,15 @@ button[type="submit"] {
 
 .tasks-background1 {
 	position: absolute;
-	top: -91px;
-	left: -12px;
+	top: -92px;
+	left: 2px;
 	z-index: -1;
 }
 
 .tasks-background2 {
 	position: absolute;
-	top: -75px;
-	right: -150px;
+	top: -77px;
+	right: -111px;
 	z-index: -1;
 }
 
@@ -800,27 +884,37 @@ button[type="submit"] {
 }
 
 .sertificate-header {
-	font-family: 'EuropeExt', Bold;
+	font-family: 'EuropeExt';
 	font-size: 30px;
+	font-weight: bold;
 	text-transform: uppercase;
 	color: #2f2b80;
-	margin: 18px 0 0;
+	margin: 4px 0 0;
 }
 
 .certificates-img {
-	padding: 30px 0;
+	padding: 20px 0 22px;
+}
+
+.fresco > img {
+	padding-right: 33px;
+}
+.fresco > img:last-child {
+	padding-right: 30px;
 }
 
 .sert-foot-txt {
-	font-family: 'EuropeExt', Bold;
+	font-family: Arial;
+	font-weight: bold;
 	font-size: 24px;
 	color: #2f2b80;
 	text-transform: uppercase;
 	margin: 0;
+	padding-top: 0;
 }
 
 .sert-foot-txt ~ img {
-	height: 96px;
+	height: 120px;
 }
 
 /* нижний блок с контактами */
@@ -832,19 +926,23 @@ button[type="submit"] {
 
 .container-contact {
 	background: url(/css/img/pattern.png), #01983b;
-	border-radius: 0 0 32px 32px;
+	border-radius: 0 0 18px 18px;
 	text-align: center;
 	position: relative;
-	padding: 0 0 30px;
+	z-index: 2;
+	top: 22px;
+	left: 2px;
+	padding-bottom: 27px;
 	box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.5);
 }
 
 .contact-txt {
-	font-family: 'EuropeExt', Bold;
+	font-family: 'EuropeExt', sans-serif;
+	font-weight: bold;
 	font-size: 30px;
 	color: #fff;
 	text-transform: uppercase;
-	padding-top: 36px;
+	padding-top: 30px;
 }
 
 .contact-header,
@@ -872,19 +970,20 @@ button[type="submit"] {
 .google {
 	position: absolute;
 	width: 100%;
-	bottom: -4px;
-	z-index: -1;
+	bottom: -5px;
+	z-index: 1;
 }
 
 .footer-logo {
-	padding: 36px 0 20px;
+	padding: 30px 0 20px;
 }
 
 .footer-logo > p {
 	color: #fff;
-	margin: 0;
+	margin: 3px;
 	font-size: 12px;
-	font-family: 'EuropeExt';
+	font-family: Arial;
+	font-weight: bold;
 }
 
 a[href="https://wezom.com.ua/"] {
@@ -893,13 +992,16 @@ a[href="https://wezom.com.ua/"] {
 
 a[href="https://wezom.com.ua/"] > p {
 	text-transform: uppercase;
-	margin: 85px 0 0;
+	margin: 94px 0 0;
 	color: #fff;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 12px;
 }
 
 .footer-inst,
 .footer-vk {
-	margin: 7px 0;
+	margin: 4px 0;
 }
 
 /* анимация социиальных сетей в footer */

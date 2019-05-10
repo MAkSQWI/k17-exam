@@ -19,7 +19,7 @@
 					<li><a href="#" class="list">Вакансии</a></li>
 					<li><a href="#" class="list">Продукция</a></li>
 					<li><a href="#" class="list">Фотогалерея</a></li>
-					<li><a href="#"i class="list">Новости</a></li>
+					<li><a href="#" class="list">Новости</a></li>
 					<li><a href="#" class="list">Статьи</a></li>
 					<li><a href="#" class="list">Контакты</a></li>
 				</ul>
@@ -30,7 +30,9 @@
 		<div class="center">
 			<header class="logotype">
 				<div class="logo">
-					<img src="css/img/logo.png" alt="">
+					<a href="/index.html">
+						<img src="css/img/logo.png" alt="">
+					</a>
 				</div>
 				<div class="block-contacts">
 					<div class="in-social">
@@ -39,14 +41,14 @@
 						<a href="https://vk.com" target="_blank"><img src="css/img/icon-vk.png" alt class="vk"></a>
 					</div>
 					<div class="contacts">
-						<a class="phone" href="tel:+38(0552)314-410, 314-403">+38(0552)314-410, 314-403;</a><!--
-					 --><a class="phone" href="tel:+38(0552)359-214">факс:+38(0552)359-214</a>
+						<a class="phone" href="tel:+38(0552)314-410, 314-403">тел:+38(0552)314-410, 314-403;</a>
+						<a class="phone" href="tel:+38(0552)359-214">факс:+38(0552)359-214</a>
 						<a class="mail" href="mailto:info@penoboard.com">e-mail:info@penoboard.com</a>
 					</div>
-					<div class="fildsearch">
-						<input type="search">
+					<form class="fildsearch">
+						<input type="search" name="search">
 						<button type="submit"><img src="/css/img/icon-search.png" alt></button>
-					</div>
+					</form>
 				</div>
 			</header>
 			<section class="slider-block">
@@ -101,41 +103,32 @@
 	<section class="second-block">
 		<div class="center">
 			<div class="second-logo">
-				<img class="logo2" src="/css/img/fav.png" alt>
-				<h3 class="txt-nova">nova</h3>
-				<h3 class="txt-board">board</h3>
-			</div>
-			<div class="header-frame">
-				<h3 class="txt-blockframe">Экструдированный  пенополистирол</h3>
-			</div>
-			<div class="penosterol">
-				<img src="/css/img/penopolistirol.png" alt="">
-			</div>
-			<div class="youtube">
-				<div class="youtube-frame">
-					<iframe width="574" height="318" src="https://www.youtube.com/embed/nM-fsCabIPc" frameborder="0"
-					allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<img class="logo2" src="/css/img/novaboard.png" alt>
+				<p class="txt-blockframe">Экструдированный  пенополистирол</p>
+				<div class="youtube">
+					<iframe width="575" height="318" src="https://www.youtube.com/embed/nM-fsCabIPc" frameborder="0"
+					allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="win-youtube"></iframe>
+					<div class="youtube-shadow">
+						<img src="css/img/Shadow 02 copy.png" alt="">
+					</div>
 				</div>
-				<div class="youtube-shadow">
-					<img src="/css/img/Shadow 02 copy.png" alt="">
+				<div class="info-block">
+					<p class="info-text">
+						Многолетний опыт применения экструдированного пенополистирола в различных отраслях строительства
+						доказывает <br>высокую эффективность его использования. Наша компания производит экструдированный
+						пенополистирол на <br>высококачественном европейском оборудовании, соблюдая мировые стандарты качества.
+					</p>
+					<p class="info-text">
+						Торговая марка <b>NOVABOARD</b> много лет на украинском рынке и за это время мы не только вышли на лидирующие
+						позиции, <br>но и доказали, что NOVABOARD– это гарантия качества, проверенная временем. Наш бренд - это наша
+						репутация. <br>Мы завоевываем ее, легко справляясь с любыми задачами. Это понимают наши партнеры в <br>процессе
+						взаимодействия с нами.
+					</p>
 				</div>
-			</div>
-			<div class="info-block">
-				<p class="info-text">
-					Многолетний опыт применения экструдированного пенополистирола в различных отраслях строительства
-					доказывает <br>высокую эффективность его использования. Наша компания производит экструдированный
-					пенополистирол на <br>высококачественном европейском оборудовании, соблюдая мировые стандарты качества.
-				</p>
-				<p class="info-text">
-					Торговая марка <b>NOVABOARD</b> много лет на украинском рынке и за это время мы не только вышли на лидирующие
-					позиции, <br>но и доказали, что NOVABOARD– это гарантия качества, проверенная временем. Наш бренд - это наша
-					репутация. <br>Мы завоевываем ее, легко справляясь с любыми задачами. Это понимают наши партнеры в <br>процессе
-					взаимодействия с нами.
-				</p>
-			</div>
-			<div class="button">
-				<button class="know-button"><a class="link" href="#">узнать подробнее</a></button>
-			</div>
+				<div class="button">
+					<button class="know-button"><a class="link" href="#">узнать подробнее</a></button>
+				</div>
+			</div>	
 		</div>
 	</section>
 	<section class="third-block">
@@ -155,65 +148,12 @@
 					</div>
 					<div class="left-body-one">
 						<p class="body-txt-one">жилые дома</p>
-					<div style="
-						position: absolute;
-						height: 18px;
-						width: 47px;
-						background: #01983b;
-						top: 0;
-						right: 190px;
-						opacity: .45;
-					"></div>
-					<div style="
-						position: absolute;
-						height: 18px;
-						width: 47px;
-						background: #01983b;
-						top: 0;
-						right: 237px;
-						opacity: .2;
-					"
-					></div>
 					</div>
 					<div class="left-body-two">
 						<p class="body-txt-two">офисные здания</p>
-						<div style="
-						position: absolute;
-						height: 18px;
-						width: 47px;
-						background: #01983b;
-						top: 0;
-						right: 241px;
-						opacity: .45;
-						"></div>
-						<div style="
-						position: absolute;
-						height: 18px;
-						width: 47px;
-						background: #01983b;
-						top: 0;
-						right: 288px;
-						opacity: .2;
-						"></div>
 					</div>
 					<div class="left-body-third">
 						<p class="body-txt-third">торгово - равлекательные комплексы</p>
-						<div style="
-						position: absolute;
-						height: 18px;
-						width: 47px;
-						background: #01983b;
-						top: 0;
-						right: 448px;
-						opacity: .45;"></div>
-						<div style="
-						position: absolute;
-						height: 18px;
-						width: 47px;
-						background: #01983b;
-						top: 0;
-						right: 495px;
-						opacity: .2;"></div>
 					</div>
 					<div class="bottom-logo">
 						<img class="white-logo" src="/css/img/white-logo.png" alt="">
@@ -229,65 +169,12 @@
 					</div>
 					<div class="right-body-one">
 						<p class="right-txt-one">спортивные сооружения - ледовые арены</p>
-					<div style="
-						position: absolute;
-						height: 18px;
-						width: 47px;
-						background: #01983b;
-						top: 0;
-						left: 473px;
-						opacity: .45;
-					"></div>
-					<div style="
-						position: absolute;
-						height: 18px;
-						width: 47px;
-						background: #01983b;
-						top: 0;
-						left: 520px;
-						opacity: .2;
-					"
-					></div>
 					</div>
 					<div class="right-body-two">
 						<p class="right-txt-two">ангары и склады</p>
-						<div style="
-						position: absolute;
-						height: 18px;
-						width: 47px;
-						background: #01983b;
-						top: 0;
-						left: 244px;
-						opacity: .45;
-						"></div>
-						<div style="
-						position: absolute;
-						height: 18px;
-						width: 47px;
-						background: #01983b;
-						top: 0;
-						left: 291px;
-						opacity: .2;
-						"></div>
 					</div>
 					<div class="right-body-third">
 						<p class="right-txt-third">заводы и фабрики</p>
-						<div style="
-						position: absolute;
-						height: 18px;
-						width: 47px;
-						background: #01983b;
-						top: 0;
-						left: 273px;
-						opacity: .45;"></div>
-						<div style="
-						position: absolute;
-						height: 18px;
-						width: 47px;
-						background: #01983b;
-						top: 0;
-						left: 320px;
-						opacity: .2;"></div>
 					</div>
 					<div class="bottom-logo">
 						<img class="white-logo2" src="/css/img/white-logo.png" alt="">
@@ -342,14 +229,9 @@
 		</div>
 	</section>
 	<section class="four-block">
-		<div class="new-center">
-			<div class="background">
-				<div class="square-shadow"></div>
-			</div>
+		<div class="white-square">
 			<div class="logotype-four">
-				<img src="/css/img/fav.png" alt="" class="logo4">
-				<h3 class="txt-nova-two">nova</h3>
-				<h3 class="txt-board-two">board</h3>
+				<img class="logo4" src="/css/img/novaboard.png" alt>
 			</div>
 			<div class="head-four">
 				<h3 class="head-four-txt">технические характеристики</h3>
@@ -492,7 +374,7 @@
 	<section class="five-block">
 		<div class="new-center">
 			<div class="five-header">
-				<h3 class="five-head">какие задачи решает?</h3>
+				<p class="five-head">какие задачи решает?</p>
 			</div>
 			<div class="tasks">
 				<div class="tasks-line__one">
@@ -568,34 +450,34 @@
 					<h3 class="sertificate-header">сертификаты качества и премии</h3>
 				</div>
 			</div>
-		</div>
-		<div class="certificates-img">
-			<a href="/css/img/sertificate-1.jpg"class="fresco" data-fresco-group="unique_name">
-				<img src="/css/img/thumb/small_setificate-1.jpg" alt="">
-			</a>
-			<a href="/css/img/sertificate-2.jpg"class="fresco" data-fresco-group="unique_name">
-				<img src="/css/img/thumb/small_setificate-2.jpg" alt="">
-			</a>
-			<a href="/css/img/sertificate-3.jpg"class="fresco" data-fresco-group="unique_name">
-				<img src="/css/img/thumb/small_setificate-3.jpg" alt="">
-			</a>
-			<a href="/css/img/sertificate-4.jpg"class="fresco" data-fresco-group="unique_name">
-				<img src="/css/img/thumb/small_setificate-4.jpg" alt="">
-			</a>
-			<a href="/css/img/sertificate-5.jpg"class="fresco" data-fresco-group="unique_name">
-				<img src="/css/img/thumb/small_setificate-5.jpg" alt="">
-			</a>
-		</div>
-		<div class="sertificate-footer">
-			<h3 class="sert-foot-txt">премия:</h3>
-			<h3 class="sert-foot-txt">100 лутших товаров Украины 2010 и 2011</h3>
-			<img src="/css/img/premium.png" alt="">
+			<div class="certificates-img">
+				<a href="/css/img/sertificate-1.jpg" class="fresco" data-fresco-group="unique_name">
+					<img src="/css/img/thumb/small_setificate-1.jpg" alt="">
+				</a>
+				<a href="/css/img/sertificate-2.jpg"class="fresco" data-fresco-group="unique_name">
+					<img src="/css/img/thumb/small_setificate-2.jpg" alt="">
+				</a>
+				<a href="/css/img/sertificate-3.jpg"class="fresco" data-fresco-group="unique_name">
+					<img src="/css/img/thumb/small_setificate-3.jpg" alt="">
+				</a>
+				<a href="/css/img/sertificate-4.jpg"class="fresco" data-fresco-group="unique_name">
+					<img src="/css/img/thumb/small_setificate-4.jpg" alt="">
+				</a>
+				<a href="/css/img/sertificate-5.jpg"class="fresco" data-fresco-group="unique_name">
+					<img src="/css/img/thumb/small_setificate-5.jpg" alt="">
+				</a>
+			</div>
+			<div class="sertificate-footer">
+				<h3 class="sert-foot-txt">премия:</h3>
+				<h3 class="sert-foot-txt">100 лутших товаров Украины 2010 и 2011</h3>
+				<img src="/css/img/premium.png" alt="">
+			</div>
 		</div>
 	</section>
 	<section class="contact">
 		<div class="new-center">
 			<div class="container-contact">
-				<h3 class="contact-txt">контакты</h3>
+				<p class="contact-txt">контакты</p>
 				<p class="contact-header">ООО «Производственно коммерческая фирма «Элит Пласт»</p>
 				<p class="contact-adress">73000, Украина, г. Херсон, ул Советская, 41-А</p>
 				<p class="contact-phone">тел:+38(0552)123-456, 789-403; факс:+38(0552)123-214</p>

@@ -1,8 +1,21 @@
 /* подключаем шрифты */
 
 @font-face {
-	src: url('/css/fonts/EuropeExt\ Bold.ttf'), url('/css/fonts/EuropeExt\ Normal.ttf'), url(/css/fonts/Vani\ Bold.ttf);
-	font-family: Regular, 'EuropeExt Bold';
+	font-family: 'EuropeExt';
+	src:
+		url(/css/fonts/subset-EuropeExtBold.woff2) format('woff2'),
+		url(/css/fonts/subset-EuropeExtBold.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuropeExt';
+	src:
+		url(/css/fonts/subset-EuropeExt.woff2) format('woff2'),
+        url(/css/fonts/subset-EuropeExt.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* отменяем отступы */
@@ -84,7 +97,8 @@ ul {
 /* оформление второго блока */
 
 .second-block {
-	background: url(/css/img/bgblock2.png) no-repeat;
+	background: url(/css/img/penopolistirol.png) no-repeat, url(/css/img/bgblock2.png) no-repeat;
+	background-position: 62px 194px, -8px -1px;
 }
 
 .youtube {
@@ -111,7 +125,7 @@ ul {
 	background: url(/css/img/fourback-left.png), url(/css/img/fourback-right.png);
 	background-repeat: no-repeat;
 	background-size: auto 381px;
-	background-position: 0 205px, right 205px;
+	background-position: -25px 193px, 1280px 193px;
 	z-index: -1;
 }
 
@@ -135,7 +149,7 @@ ul {
 .five-block {
 	background: url(/css/img/back-five.png);
 	background-repeat: no-repeat;
-	background-position: 0 -17px;
+	background-position: -8px -29px;
 	padding-bottom: 52px;
 }
 
