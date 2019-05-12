@@ -159,7 +159,7 @@ ul {
 	justify-content: center;
 	width: 1255px;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
 
 .container-left {
